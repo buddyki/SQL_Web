@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="buddyki">
+    <meta name="description" content="buddyki">
+    <title>buddyki</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Welcome to here!</h1>
+    </header>
+
+    <main class="main">
+
+        <article id="intro" class="main__article intro">
+            <h2 class="intro__h2">User Management System</h2>
+        </article>
+
+        <br><br>
+
+        <div class="form-container">
+            <p><a href="/users">View Active Users</a></p>
+
+            <form action="/status" method="get">
+                <label for="status">Enter User Status:</label>
+                <input type="text" id="status" name="status" required>
+                <button type="submit">Find</button>
+            </form>
+            
+            <form action="/by-login" method="get">
+                <label for="login">Enter User Login:</label>
+                <input type="text" id="login" name="login" required>
+                <button type="submit">Find</button>
+            </form>
+            
+            <form action="/by-id" method="get">
+                <label for="id">Enter User ID:</label>
+                <input type="number" id="id" name="id" required>
+                <button type="submit">Find</button>
+            </form>
+        </div>
+
+        <section class="hero">
+            <h2 class="hero__h2">Happy to see you!</h2>
+            <figure>
+                <img src="img/identity1.gif" alt="Hello World" title="We love web!" width="700"
+                    height="500">
+                <figcaption class="offscreen">
+                    Hello World
+                </figcaption>
+            </figure> 
+        </section>
+
+        <p class="center">
+            <a href="#">Back To Top</a>
+        </p>
+        </article>
+    </main>
+    <hr>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">Buddyki</span>
+        </p>
+    </footer>
+</body>
+
+</html>
